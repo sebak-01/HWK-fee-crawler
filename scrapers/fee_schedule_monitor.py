@@ -425,14 +425,24 @@ def main(argv: list[str] | None = None) -> int:
         history = json.loads(CHANGES_JSON.read_text(encoding="utf-8")) if CHANGES_JSON.exists() else []
         history.extend(changes)
         CHANGES_JSON.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        CHANGE_MARKER.write_text(
-            "\n".join(f"- {c['name']} ({c['slug']}): {c['previous_date']} -> {c['new_date']}" for c in changes)
-            + "\n",
-            encoding="utf-8",
-        )
         logger.info("*** %d Gebührenverzeichnis-Änderung(en) erkannt ***", len(changes))
         for c in changes:
             logger.info("  %s: %s -> %s", c["name"], c["previous_date"], c["new_date"])
+
+    errors = [r for r in results if r.error]
+
+    if changes or errors:
+        marker_lines: list[str] = []
+        if changes:
+            marker_lines.append("## Änderungen")
+            for c in changes:
+                marker_lines.append(f"- {c['name']} ({c['slug']}): {c['previous_date']} -> {c['new_date']}")
+        if errors:
+            marker_lines.append("## Fehler")
+            for r in errors:
+                marker_lines.append(f"- {r.name} ({r.slug}): {r.error}")
+        marker_lines.append(f"\n{ok}/{len(results)} Daten bestimmt. {len(changes)} Änderungen, {len(errors)} Fehler.")
+        CHANGE_MARKER.write_text("\n".join(marker_lines) + "\n", encoding="utf-8")
     elif CHANGE_MARKER.exists():
         CHANGE_MARKER.unlink()
 

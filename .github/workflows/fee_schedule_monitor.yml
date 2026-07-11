@@ -46,14 +46,14 @@ jobs:
             git push
           fi
 
-      - name: Open issue if changes were detected
+      - name: Open issue if changes or errors were detected
         if: hashFiles('data/.fee_schedule_has_changes') != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           BODY=$(cat data/.fee_schedule_has_changes)
           gh issue create \
-            --title "Gebührenverzeichnis-Änderung(en) erkannt – $(date -u +%Y-%m-%d)" \
+            --title "Wöchentlicher Gebührenverzeichnis-Check – $(date -u +%Y-%m-%d)" \
             --body "$BODY
 
 Details in \`data/fee_schedule_changes.json\` and \`data/fee_schedule_status.json\`." \

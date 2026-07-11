@@ -26,16 +26,22 @@ per-chamber scrapers), no shared code.
    "Kostenordnung", etc. If it's not on the homepage, shallow-crawls a
    handful of likely nav pages ("Über uns", "Formulare", "Satzungen", ...)
    and tries again there.
-2. **Resolve "last updated"**, in priority order:
-   - PDF metadata (`/ModDate` on the PDF itself) — most reliable, most common
-     since most chambers just link a PDF.
-   - "Stand: DD.MM.YYYY" / "gültig ab ..." text on the page.
-   - HTTP `Last-Modified` response header, as a last resort.
-3. **Diff against last week's run.** Any chamber whose resolved URL or date
+2. **Resolve "last updated"** by extracting all available date signals and
+   picking the **most recent** one — because PDF metadata often carries a
+   stale date from the original document creation while the body text
+   contains the true revision date:
+   - PDF metadata (`/ModDate` or `/CreationDate`)
+   - PDF body text (first 3 pages scanned for "Stand: DD.MM.YYYY" patterns)
+   - Page text on HTML pages
+   - HTTP `Last-Modified` response header
+3. **Check multiple candidate links.** If a page links to more than one
+   fee schedule PDF, the crawler resolves the date for each and keeps the
+   URL with the newest effective date.
+4. **Diff against last week's run.** Any chamber whose resolved URL or date
    changed gets logged to `data/fee_schedule_changes.json`.
-4. **Notify.** The weekly GitHub Action opens a GitHub Issue listing what
-   changed, so you get pinged via GitHub's own notifications (if you're
-   watching the repo).
+5. **Notify.** The weekly GitHub Action opens a GitHub Issue listing
+   what changed AND which chambers failed to resolve (errors), so you get
+   pinged via GitHub's own notifications (if you're watching the repo).
 
 ## ⚠️ Accuracy — read this before trusting the output
 
@@ -90,13 +96,14 @@ python -m scrapers.fee_schedule_monitor --delay 2.0
 - **`data/chambers_national.json`** — static list of all 53 chambers (slug,
   name, website), sourced from the [ZDH address list](https://www.zdh.de/ueber-uns/organisationen-des-handwerks/handwerkskammern/adressen-der-handwerkskammern/).
 - **`data/fee_schedule_status.json`** — current state per chamber: resolved
-  URL, resolved date, detection method (`pdf_metadata` / `page_text` /
-  `http_header`), timestamp, and any error.
+  URL, resolved date, detection method (`pdf_metadata` / `pdf_text` /
+  `page_text` / `http_header`), timestamp, and any error.
 - **`data/fee_schedule_changes.json`** — append-only log of every detected
   change (previous date/URL → new date/URL, with a timestamp).
 - **`data/.fee_schedule_has_changes`** — marker file the Action checks to
-  decide whether to open an issue; present only when the latest run found a
-  change, deleted otherwise.
+  decide whether to open an issue. Contains sections for both changed
+  chambers and chambers with errors; present when the latest run found
+  any change or error, deleted otherwise.
 
 ## CI
 
@@ -105,7 +112,8 @@ python -m scrapers.fee_schedule_monitor --delay 2.0
 - Runs every **Monday 05:00 UTC** (+ manual trigger via "Run workflow").
 - Commits the updated JSON files if anything changed.
 - Opens a GitHub Issue (label `gebuehren-update`) when a chamber's fee
-  schedule date or URL moved since the last run.
+  schedule date or URL moved since the last run, or when a chamber
+  could not be resolved (errors).
 
 First-run setup:
 - Create the `gebuehren-update` label in the repo (Issues → Labels), or
@@ -115,7 +123,7 @@ First-run setup:
   (already set in the YAML) — no extra secrets required.
 
 Want email or Slack instead of/in addition to a GitHub Issue? Add a step
-after "Open issue if changes were detected" that reads
+after "Open issue if changes or errors were detected" that reads
 `data/.fee_schedule_has_changes` and `curl`s a Slack webhook or sends mail —
 the marker file already has the human-readable summary.
 
