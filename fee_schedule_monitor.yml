@@ -1,0 +1,60 @@
+name: Weekly Gebührenverzeichnis check
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"   # Mondays 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: fee-schedule-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fee-schedule monitor
+        run: python -m scrapers.fee_schedule_monitor --delay 1.5
+
+      - name: Commit updated status
+        run: |
+          git config user.name  "fee-monitor-bot"
+          git config user.email "fee-monitor-bot@users.noreply.github.com"
+          git add data/fee_schedule_status.json data/fee_schedule_changes.json
+          if git diff --staged --quiet; then
+            echo "No status changes."
+          else
+            git commit -m "chore: weekly Gebührenverzeichnis check $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Open issue if changes were detected
+        if: hashFiles('data/.fee_schedule_has_changes') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BODY=$(cat data/.fee_schedule_has_changes)
+          gh issue create \
+            --title "Gebührenverzeichnis-Änderung(en) erkannt – $(date -u +%Y-%m-%d)" \
+            --body "$BODY
+
+Details in \`data/fee_schedule_changes.json\` and \`data/fee_schedule_status.json\`." \
+            --label "gebuehren-update" || echo "Issue creation failed (label may not exist yet) — see run log above."
