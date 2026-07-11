@@ -16,12 +16,10 @@ This module instead uses a handful of heuristics:
      shallow set of likely nav pages: "Über uns", "Formulare", "Berufliche
      Bildung", "Meister", "Satzungen", ...) for link text/href containing
      keywords like "gebührenverzeichnis", "gebührenordnung", "kostenordnung".
-  2. Once found, determine "last updated" with a priority cascade:
-       a. If it's a PDF: read /ModDate from the PDF's own metadata (pypdf).
-       b. Otherwise (PDF has no metadata, or it's an HTML page): look for
-          "Stand: DD.MM.YYYY" / "gültig ab DD.MM.YYYY" style text near the
-          top of the document.
-       c. Fall back to the HTTP `Last-Modified` response header.
+  2. Once found, determine "last updated" by extracting all available date
+     signals (PDF metadata, PDF body text, page text, HTTP header) and
+     picking the *most recent* date — because PDF metadata often carries a
+     stale "D:" date from the original document creation.
   3. Compare against the previous run's data/fee_schedule_status.json and
      flag any chamber whose resolved URL or resolved date changed.
 
@@ -46,7 +44,7 @@ import logging
 import re
 import time
 from dataclasses import dataclass, field, asdict
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -153,17 +151,16 @@ class Crawler:
     # Step 1: locate the Gebührenverzeichnis link
     # ------------------------------------------------------------------
 
-    def find_fee_schedule_url(self, website: str) -> str | None:
+    def find_fee_schedule_urls(self, website: str) -> list[str]:
         home = self.get(website)
         if home is None:
-            return None
+            return []
 
         soup = BeautifulSoup(home.text, "html.parser")
         direct = self._scan_for_fee_links(soup, home.url)
         if direct:
-            return direct[0]
+            return direct
 
-        # Not on the homepage — shallow-crawl a handful of likely nav pages.
         nav_urls = self._collect_nav_candidates(soup, home.url)
         for nav_url in nav_urls[:MAX_NAV_PAGES]:
             page = self.get(nav_url)
@@ -174,8 +171,8 @@ class Crawler:
             nav_soup = BeautifulSoup(page.text, "html.parser")
             found = self._scan_for_fee_links(nav_soup, page.url)
             if found:
-                return found[0]
-        return None
+                return found
+        return []
 
     def _scan_for_fee_links(self, soup: BeautifulSoup, base_url: str) -> list[str]:
         hits: list[str] = []
@@ -211,7 +208,7 @@ class Crawler:
     # ------------------------------------------------------------------
 
     def resolve_last_updated(self, url: str) -> tuple[str | None, str | None]:
-        """Returns (iso_date_or_None, method_or_None)."""
+        """Returns (iso_date_or_None, method_or_None). Picks newest date across all sources."""
         resp = self.get(url)
         if resp is None:
             return None, None
@@ -219,18 +216,29 @@ class Crawler:
         content_type = (resp.headers.get("Content-Type") or "").lower()
         is_pdf = url.lower().endswith(".pdf") or "application/pdf" in content_type
 
+        candidates: list[tuple[str, str]] = []
+
         if is_pdf:
-            pdf_date = self._pdf_mod_date(resp.content)
-            if pdf_date:
-                return pdf_date, "pdf_metadata"
+            meta_date = self._pdf_mod_date(resp.content)
+            if meta_date:
+                candidates.append((meta_date, "pdf_metadata"))
+            pdf_text = self._pdf_extract_text(resp.content)
+            if pdf_text:
+                text_date = self._text_stand_date(pdf_text)
+                if text_date:
+                    candidates.append((text_date, "pdf_text"))
         else:
             text_date = self._text_stand_date(resp.text)
             if text_date:
-                return text_date, "page_text"
+                candidates.append((text_date, "page_text"))
 
         header_date = self._http_last_modified(resp)
         if header_date:
-            return header_date, "http_header"
+            candidates.append((header_date, "http_header"))
+
+        if candidates:
+            candidates.sort(reverse=True)
+            return candidates[0]
 
         return None, None
 
@@ -253,6 +261,23 @@ class Crawler:
                 return date(y, mo, d).isoformat()
         except Exception as exc:
             logger.debug("Could not parse PDF metadata: %s", exc)
+        return None
+
+    def _pdf_extract_text(self, content: bytes) -> str | None:
+        try:
+            from pypdf import PdfReader
+        except ImportError:
+            return None
+        try:
+            reader = PdfReader(io.BytesIO(content))
+            parts: list[str] = []
+            for page in reader.pages[:3]:
+                page_text = page.extract_text()
+                if page_text:
+                    parts.append(page_text)
+            return "\n".join(parts)
+        except Exception as exc:
+            logger.debug("Could not extract PDF text: %s", exc)
         return None
 
     def _text_stand_date(self, text: str) -> str | None:
@@ -292,18 +317,32 @@ class Crawler:
     def check_chamber(self, chamber: dict) -> ChamberResult:
         slug, name, website = chamber["slug"], chamber["name"], chamber["website"]
         result = ChamberResult(slug=slug, name=name, website=website,
-                                checked_at=datetime.utcnow().isoformat(timespec="seconds") + "Z")
+                                checked_at=datetime.now(timezone.utc).isoformat(timespec="seconds") + "Z")
         try:
             override = CHAMBER_OVERRIDES.get(slug, {})
-            url = override.get("fee_schedule_url") or self.find_fee_schedule_url(website)
-            if not url:
+            if override.get("fee_schedule_url"):
+                candidate_urls = [override["fee_schedule_url"]]
+            else:
+                candidate_urls = self.find_fee_schedule_urls(website)
+
+            if not candidate_urls:
                 result.error = "Gebührenverzeichnis-Link nicht gefunden"
                 return result
-            result.fee_schedule_url = url
-            last_updated, method = self.resolve_last_updated(url)
-            result.last_updated = last_updated
-            result.detection_method = method
-            if not last_updated:
+
+            best_date: str | None = None
+            best_url: str | None = None
+            best_method: str | None = None
+            for url in candidate_urls[:MAX_CANDIDATE_LINKS]:
+                date_val, method = self.resolve_last_updated(url)
+                if date_val and (best_date is None or date_val > best_date):
+                    best_date = date_val
+                    best_url = url
+                    best_method = method
+
+            result.fee_schedule_url = best_url or candidate_urls[0]
+            result.last_updated = best_date
+            result.detection_method = best_method
+            if not best_date:
                 result.error = "Datum konnte nicht bestimmt werden"
         except Exception as exc:  # noqa: BLE001 — keep the run going for other chambers
             logger.exception("Unhandled error checking %s", slug)
@@ -336,7 +375,7 @@ def diff_results(previous: dict[str, dict], current: list[ChamberResult]) -> lis
                 "new_date": r.last_updated,
                 "previous_url": prev.get("fee_schedule_url"),
                 "new_url": r.fee_schedule_url,
-                "detected_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                "detected_at": datetime.now(timezone.utc).isoformat(timespec="seconds") + "Z",
             })
     return changes
 
