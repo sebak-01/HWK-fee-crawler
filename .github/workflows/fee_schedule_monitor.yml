@@ -38,7 +38,8 @@ jobs:
         run: |
           git config user.name  "fee-monitor-bot"
           git config user.email "fee-monitor-bot@users.noreply.github.com"
-          git add data/fee_schedule_status.json data/fee_schedule_changes.json || true
+          git add data/fee_schedule_status.json || true
+          git add data/fee_schedule_changes.json || true
           if git diff --staged --quiet; then
             echo "No status changes."
           else
