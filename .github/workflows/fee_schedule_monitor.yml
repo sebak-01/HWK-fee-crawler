@@ -62,6 +62,8 @@ jobs:
         run: |
           BODY=$(cat data/.fee_schedule_has_changes)
           FOOTER='Details in `data/fee_schedule_changes.json` and `data/fee_schedule_status.json`.'
+          printf '%s\n\n%s\n' "$BODY" "$FOOTER" > /tmp/issue-body.md
           gh issue create \
             --title "Wöchentlicher Gebührenverzeichnis-Check – $(date -u +%Y-%m-%d)" \
-            --body "$BODY
+            --body-file /tmp/issue-body.md \
+            --label "gebuehren-update" || echo "Issue creation failed (label may not exist yet) — see run log above."
