@@ -421,8 +421,11 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps([asdict(r) for r in results], ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
     )
 
+    if not CHANGES_JSON.exists():
+        CHANGES_JSON.write_text("[]\n", encoding="utf-8")
+
     if changes:
-        history = json.loads(CHANGES_JSON.read_text(encoding="utf-8")) if CHANGES_JSON.exists() else []
+        history = json.loads(CHANGES_JSON.read_text(encoding="utf-8"))
         history.extend(changes)
         CHANGES_JSON.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         logger.info("*** %d Gebührenverzeichnis-Änderung(en) erkannt ***", len(changes))
