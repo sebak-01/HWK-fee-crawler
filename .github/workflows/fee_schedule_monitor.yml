@@ -65,5 +65,5 @@ jobs:
             --title "Wöchentlicher Gebührenverzeichnis-Check – $(date -u +%Y-%m-%d)" \
             --body "$BODY
 
-Details in \`data/fee_schedule_changes.json\` and \`data/fee_schedule_status.json\`." \
+Details in `data/fee_schedule_changes.json` and `data/fee_schedule_status.json`." \
             --label "gebuehren-update" || echo "Issue creation failed (label may not exist yet) — see run log above."
