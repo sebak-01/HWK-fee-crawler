@@ -65,6 +65,3 @@ jobs:
           gh issue create \
             --title "Wöchentlicher Gebührenverzeichnis-Check – $(date -u +%Y-%m-%d)" \
             --body "$BODY
-
-$FOOTER" \
-            --label "gebuehren-update" || echo "Issue creation failed (label may not exist yet) — see run log above."
