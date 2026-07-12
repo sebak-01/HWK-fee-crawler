@@ -1,0 +1,532 @@
+[
+  {
+    "slug": "hwk-aachen",
+    "name": "Handwerkskammer Aachen",
+    "website": "https://www.hwk-aachen.de",
+    "fee_schedule_url": "https://www.hwk-aachen.de/downloads/aenderung-ergaenzung-des-gebuehrentarifs-zur-gebuehrenordnung-der-handwerkskammer-aachen-33,1053.pdf",
+    "last_updated": "2026-01-15",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:06:40+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-swf",
+    "name": "Handwerkskammer Südwestfalen",
+    "website": "https://www.hwk-swf.de",
+    "fee_schedule_url": "https://www.hwk-swf.de/downloads/gebuehrentarif-der-handwerkskammer-suedwestfalen-38,1087.pdf",
+    "last_updated": "2026-07-06",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:07:00+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-schwaben",
+    "name": "Handwerkskammer für Schwaben",
+    "website": "https://www.hwk-schwaben.de",
+    "fee_schedule_url": "https://www.hwk-schwaben.de/artikel/gebuehrenordnung-mit-gebuehrenverzeichnis-71,0,281.html",
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:07:14+00:00Z",
+    "error": "Datum konnte nicht bestimmt werden"
+  },
+  {
+    "slug": "hwk-aurich",
+    "name": "Handwerkskammer für Ostfriesland",
+    "website": "https://www.hwk-aurich.de",
+    "fee_schedule_url": "https://www.hwk-aurich.de/_Resources/Persistent/e/5/0/6/e50617cbfd208e8c1734c7c954523d59935c78a6/Achtzehnte%20Satzung%20zur%20%C3%84nderung%20der%20Geb%C3%BChrenordnung.pdf",
+    "last_updated": "2025-12-22",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:07:24+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-oberfranken",
+    "name": "Handwerkskammer für Oberfranken",
+    "website": "https://www.hwk-oberfranken.de",
+    "fee_schedule_url": "https://www.hwk-oberfranken.de/downloads/gebuehrenordnung-und-gebuehrenverzeichnis-72,1016.pdf",
+    "last_updated": "2026-02-24",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:07:42+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-berlin",
+    "name": "Handwerkskammer Berlin",
+    "website": "https://www.hwk-berlin.de",
+    "fee_schedule_url": "https://www.hwk-berlin.de/downloads/amtliche-bekanntmachung-zur-aenderung-des-gebuehrenverzeichnisses-vom-16-03-2026-91,1060.pdf",
+    "last_updated": "2026-03-16",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:07:59+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-owl",
+    "name": "Handwerkskammer Ostwestfalen-Lippe zu Bielefeld",
+    "website": "https://www.handwerk-owl.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:08:18+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-bls",
+    "name": "Handwerkskammer Braunschweig-Lüneburg-Stade",
+    "website": "https://www.hwk-bls.de",
+    "fee_schedule_url": "https://www.hwk-bls.de/artikel/kostenordnung-mit-kostentarifen-22,482,869.html",
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:08:45+00:00Z",
+    "error": "Datum konnte nicht bestimmt werden"
+  },
+  {
+    "slug": "hwk-bremen",
+    "name": "Handwerkskammer Bremen",
+    "website": "https://www.hwk-bremen.de",
+    "fee_schedule_url": "https://www.hwk-bremen.de/_Resources/Persistent/c/f/f/2/cff24b29fc80d04b4c57fca8308caf56503e4c74/Geb%C3%BChrentarif%20ab%20Januar%202026.pdf",
+    "last_updated": "2026-01-26",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:08:55+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-chemnitz",
+    "name": "Handwerkskammer Chemnitz",
+    "website": "https://www.hwk-chemnitz.de",
+    "fee_schedule_url": "https://www.hwk-chemnitz.de/fileadmin/user_upload/Top_nav/Ueber-uns/Rechtsgrundlagen/260630_Geb%C3%BChrenverzeichnis_03-2026_G.pdf",
+    "last_updated": "2026-07-06",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:09:07+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-cottbus",
+    "name": "Handwerkskammer Cottbus",
+    "website": "https://www.hwk-cottbus.de",
+    "fee_schedule_url": "https://www.hwk-cottbus.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-cottbus-2025-7,2978.pdf",
+    "last_updated": "2025-09-22",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:09:31+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-do",
+    "name": "Handwerkskammer Dortmund",
+    "website": "https://www.hwk-do.de",
+    "fee_schedule_url": "https://www.hwk-do.de/wp-content/uploads/2026/01/Gebuehrentarif_01-2026.pdf",
+    "last_updated": "2026-01-16",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:09:46+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-dresden",
+    "name": "Handwerkskammer Dresden",
+    "website": "https://www.hwk-dresden.de",
+    "fee_schedule_url": "https://www.hwk-dresden.de/fileadmin/user_upload/mb/Recht/Dokumente/Gebuehrenverzeichnis_Handwerkskammer-Dresden.pdf",
+    "last_updated": "2025-07-31",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:09:56+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-duesseldorf",
+    "name": "Handwerkskammer Düsseldorf",
+    "website": "https://www.hwk-duesseldorf.de",
+    "fee_schedule_url": "https://www.hwk-duesseldorf.de/downloads/gebuehrentarif-2026-beschluss-vom-20-11-2025-31,4332.pdf",
+    "last_updated": "2026-01-26",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:10:06+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-erfurt",
+    "name": "Handwerkskammer Erfurt",
+    "website": "https://www.hwk-erfurt.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:10:20+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-flensburg",
+    "name": "Handwerkskammer Flensburg",
+    "website": "https://www.hwk-flensburg.de",
+    "fee_schedule_url": "https://www.hwk-flensburg.de/_Resources/Persistent/0/d/a/8/0da863017bdfc4188c7c32fbb9c3329f6a262eca/Geb%C3%BChrenordnung%202026_Stand%2017.02.2026.pdf",
+    "last_updated": "2026-03-18",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:10:49+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-rhein-main",
+    "name": "Handwerkskammer Frankfurt-Rhein-Main",
+    "website": "https://www.hwk-rhein-main.de",
+    "fee_schedule_url": "https://www.hwk-rhein-main.de/Webseiten-Assets/hwk-dokumente/ueber-die-hwk/Geb%C3%BChrenverzeichnis-%2024.11.2025.pdf",
+    "last_updated": "2025-11-24",
+    "detection_method": "pdf_text",
+    "checked_at": "2026-07-12T13:11:01+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-ff",
+    "name": "Handwerkskammer Frankfurt/Oder - Region Ostbrandenburg",
+    "website": "https://www.hwk-ff.de",
+    "fee_schedule_url": "https://www.hwk-ff.de/wp-content/uploads/2023/12/2016-06-Gebuehrenordnung.pdf",
+    "last_updated": "2026-01-31",
+    "detection_method": "http_header",
+    "checked_at": "2026-07-12T13:11:19+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-freiburg",
+    "name": "Handwerkskammer Freiburg",
+    "website": "https://www.hwk-freiburg.de",
+    "fee_schedule_url": "https://www.hwk-freiburg.de/wp-content/uploads/Gebuehrenverzeichnis_ab_19.11.2025-1.pdf",
+    "last_updated": "2026-04-29",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:11:47+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-gera",
+    "name": "Handwerkskammer für Ostthüringen",
+    "website": "https://www.hwk-gera.de",
+    "fee_schedule_url": "https://www.hwk-gera.de/downloads/gebuehrenordnung-der-handwerkskammer-fuer-ostthueringen-5,1367.pdf",
+    "last_updated": "2025-01-30",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:12:04+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-halle",
+    "name": "Handwerkskammer Halle (Saale)",
+    "website": "https://www.hwkhalle.de",
+    "fee_schedule_url": "https://www.hwkhalle.de/aktuelles-gebuehrenverzeichnis/",
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:12:15+00:00Z",
+    "error": "Datum konnte nicht bestimmt werden"
+  },
+  {
+    "slug": "hwk-hamburg",
+    "name": "Handwerkskammer Hamburg",
+    "website": "https://www.hwk-hamburg.de",
+    "fee_schedule_url": "https://www.hwk-hamburg.de/downloads/gebuehrenordnung-der-handwerkskammer-hamburg-93,1085.pdf",
+    "last_updated": "2026-01-02",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:12:20+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-hannover",
+    "name": "Handwerkskammer Hannover",
+    "website": "https://www.hwk-hannover.de",
+    "fee_schedule_url": "https://www.hwk-hannover.de/downloads/gebuehrenordnung-der-handwerkskammer-hannover-vom-21-08-2025-23,4436.pdf",
+    "last_updated": "2025-08-22",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:12:31+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-heilbronn",
+    "name": "Handwerkskammer Heilbronn-Franken",
+    "website": "https://www.hwk-heilbronn.de",
+    "fee_schedule_url": "https://www.hwk-heilbronn.de/gebuehren/",
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:12:41+00:00Z",
+    "error": "Datum konnte nicht bestimmt werden"
+  },
+  {
+    "slug": "hwk-hildesheim",
+    "name": "Handwerkskammer Hildesheim-Südniedersachsen",
+    "website": "https://www.hwk-hildesheim.de",
+    "fee_schedule_url": "https://www.hwk-hildesheim.de/downloads/gebuehrenordnung-und-gebuehrentarife-der-hwk-hildesheim-suedniedersachsen-24,1918.pdf",
+    "last_updated": "2025-11-20",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:12:53+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-pfalz",
+    "name": "Handwerkskammer der Pfalz",
+    "website": "https://www.hwk-pfalz.de",
+    "fee_schedule_url": "https://www.hwk-pfalz.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-der-pfalz-51,4600.pdf",
+    "last_updated": "2026-04-02",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:13:03+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-karlsruhe",
+    "name": "Handwerkskammer Karlsruhe",
+    "website": "https://www.hwk-karlsruhe.de",
+    "fee_schedule_url": "https://www.hwk-karlsruhe.de/downloads/gebuehrenverzeichnis-in-der-derzeit-gueltigen-fassung-63,20.pdf",
+    "last_updated": "2025-12-16",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:13:14+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "website": "https://www.hwk-kassel.de",
+    "fee_schedule_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODM4NTc1NDgsImV4cCI6MTc4Mzk0NzU0OCwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.ZnAAItLycJYBNsEl77skRq7yrlUcvU4F4bT4hDhDfCQ/Gebuehrenverzeichnis_2025.pdf",
+    "last_updated": "2025-11-10",
+    "detection_method": "http_header",
+    "checked_at": "2026-07-12T13:13:28+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-koblenz",
+    "name": "Handwerkskammer Koblenz",
+    "website": "https://www.hwk-koblenz.de",
+    "fee_schedule_url": "https://www.hwk-koblenz.de/downloads/gebuehrenverzeichnis-2025-52,1964.pdf",
+    "last_updated": "2026-01-13",
+    "detection_method": "pdf_text",
+    "checked_at": "2026-07-12T13:13:40+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-koeln",
+    "name": "Handwerkskammer zu Köln",
+    "website": "https://www.hwk-koeln.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:13:52+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-konstanz",
+    "name": "Handwerkskammer Konstanz",
+    "website": "https://www.hwk-konstanz.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:14:16+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-leipzig",
+    "name": "Handwerkskammer zu Leipzig",
+    "website": "https://www.hwk-leipzig.de",
+    "fee_schedule_url": "https://www.hwk-leipzig.de/artikel/gebuehrenordnung-die-rechtliche-basis-fuer-die-erhebung-von-gebuehren-3,0,99.html",
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:14:42+00:00Z",
+    "error": "Datum konnte nicht bestimmt werden"
+  },
+  {
+    "slug": "hwk-luebeck",
+    "name": "Handwerkskammer Lübeck",
+    "website": "https://www.hwk-luebeck.de",
+    "fee_schedule_url": "https://www.hwk-luebeck.de/_Resources/Persistent/3/6/7/7/367742ea5db8f1d9a74e10b8658caa95cdd12c36/Geb%C3%BChrenverzeichnis_13.05.2025.pdf",
+    "last_updated": "2025-09-09",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:14:53+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-magdeburg",
+    "name": "Handwerkskammer Magdeburg",
+    "website": "https://www.hwk-magdeburg.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:15:04+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-rheinhessen",
+    "name": "Handwerkskammer Rheinhessen",
+    "website": "https://www.hwk.de",
+    "fee_schedule_url": "https://www.hwk.de/wp-content/uploads/2026_1201_Gebuehrenverzeichnis-1.pdf",
+    "last_updated": "2026-01-16",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:15:29+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-mannheim",
+    "name": "Handwerkskammer Mannheim - Rhein-Neckar-Odenwald",
+    "website": "https://www.hwk-mannheim.de",
+    "fee_schedule_url": "https://www.hwk-mannheim.de/downloads/pdf-das-gebuehrenverzeichnis-65,451.pdf",
+    "last_updated": "2025-12-11",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:15:46+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-muenchen",
+    "name": "Handwerkskammer für München und Oberbayern",
+    "website": "https://www.hwk-muenchen.de",
+    "fee_schedule_url": "https://www.hwk-muenchen.de/downloads/ausfertigung-gebuehrenordnung-mit-gebuehrenverzeichnis-der-hwk-fuer-muenchen-und-oberbayern-01-2025-74,13891.pdf",
+    "last_updated": "2025-01-07",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:16:01+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-muenster",
+    "name": "Handwerkskammer Münster",
+    "website": "https://www.hwk-muenster.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:16:13+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-mittelfranken",
+    "name": "Handwerkskammer für Mittelfranken",
+    "website": "https://www.hwk-mittelfranken.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:16:31+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-oldenburg",
+    "name": "Handwerkskammer Oldenburg",
+    "website": "https://www.hwk-oldenburg.de",
+    "fee_schedule_url": "https://www.hwk-oldenburg.de/_Resources/Persistent/9/1/a/7/91a764faac7e8fba370e74a511a86ae2e4ebec0c/Gebuehrenordnung.pdf",
+    "last_updated": "2022-05-31",
+    "detection_method": "http_header",
+    "checked_at": "2026-07-12T13:16:33+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-osnabrueck",
+    "name": "Handwerkskammer Osnabrück-Emsland-Grafschaft Bentheim",
+    "website": "https://hwk-osnabrueck.de",
+    "fee_schedule_url": "https://www.hwk-osnabrueck.de/wp-content/uploads/2026-01-Gebuehrenordnung.pdf",
+    "last_updated": "2026-01-01",
+    "detection_method": "pdf_text",
+    "checked_at": "2026-07-12T13:16:45+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-niederbayern-oberpfalz",
+    "name": "Handwerkskammer Niederbayern-Oberpfalz",
+    "website": "https://www.hwkno.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:17:05+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-potsdam",
+    "name": "Handwerkskammer Potsdam",
+    "website": "https://www.hwk-potsdam.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:17:30+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-reutlingen",
+    "name": "Handwerkskammer Reutlingen",
+    "website": "https://www.hwk-reutlingen.de",
+    "fee_schedule_url": "https://www.hwk-reutlingen.de/wp-content/uploads/gebuehrenordnung_januar-2026.pdf",
+    "last_updated": "2026-03-25",
+    "detection_method": "http_header",
+    "checked_at": "2026-07-12T13:17:59+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-omv",
+    "name": "Handwerkskammer Ostmecklenburg-Vorpommern",
+    "website": "https://www.hwk-omv.de",
+    "fee_schedule_url": "https://www.hwk-omv.de/downloads/gebuehrenverzeichnis-18,419.pdf",
+    "last_updated": "2026-02-16",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:18:17+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-saarland",
+    "name": "Handwerkskammer des Saarlandes",
+    "website": "https://www.hwk-saarland.de",
+    "fee_schedule_url": "https://www.hwk-saarland.de/wp-content/uploads/Gebuehrenverzeichnis-ab-2026.pdf",
+    "last_updated": "2026-06-01",
+    "detection_method": "http_header",
+    "checked_at": "2026-07-12T13:18:31+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-schwerin",
+    "name": "Handwerkskammer Schwerin",
+    "website": "https://www.hwk-schwerin.de",
+    "fee_schedule_url": "https://www.hwk-schwerin.de/downloads/gebuehrenverzeichnis-19,8.pdf",
+    "last_updated": "2025-10-17",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:18:43+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-stuttgart",
+    "name": "Handwerkskammer Region Stuttgart",
+    "website": "https://www.hwk-stuttgart.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:19:01+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  },
+  {
+    "slug": "hwk-suedthueringen",
+    "name": "Handwerkskammer Südthüringen",
+    "website": "https://www.hwk-suedthueringen.de",
+    "fee_schedule_url": "https://www.hwk-suedthueringen.de/wp-content/uploads/2025/10/Gebuehrenordnung-mit-Gebuehrenverzeichnis-2025.pdf",
+    "last_updated": "2025-10-14",
+    "detection_method": "http_header",
+    "checked_at": "2026-07-12T13:19:29+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-trier",
+    "name": "Handwerkskammer Trier",
+    "website": "https://www.hwk-trier.de",
+    "fee_schedule_url": "https://www.hwk-trier.de/downloads/gebuehrenverzeichnis-54,77.pdf",
+    "last_updated": "2026-01-21",
+    "detection_method": "pdf_text",
+    "checked_at": "2026-07-12T13:20:03+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-ulm",
+    "name": "Handwerkskammer Ulm",
+    "website": "https://www.hwk-ulm.de",
+    "fee_schedule_url": "https://www.hwk-ulm.de/wp-content/uploads/Gebuehrenverzeichnis-Stand-10.12.2025-1.pdf",
+    "last_updated": "2025-12-10",
+    "detection_method": "pdf_text",
+    "checked_at": "2026-07-12T13:20:23+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-wiesbaden",
+    "name": "Handwerkskammer Wiesbaden",
+    "website": "https://www.hwk-wiesbaden.de",
+    "fee_schedule_url": "https://www.hwk-wiesbaden.de/downloads/gebuehrenordnung-2008-44,2122.pdf",
+    "last_updated": "2013-01-24",
+    "detection_method": "pdf_metadata",
+    "checked_at": "2026-07-12T13:20:39+00:00Z",
+    "error": null
+  },
+  {
+    "slug": "hwk-ufr",
+    "name": "Handwerkskammer für Unterfranken",
+    "website": "https://www.hwk-ufr.de",
+    "fee_schedule_url": null,
+    "last_updated": null,
+    "detection_method": null,
+    "checked_at": "2026-07-12T13:20:51+00:00Z",
+    "error": "Gebührenverzeichnis-Link nicht gefunden"
+  }
+]
