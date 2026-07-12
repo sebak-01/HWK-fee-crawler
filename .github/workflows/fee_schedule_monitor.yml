@@ -2,7 +2,7 @@ name: Weekly Gebührenverzeichnis check
 
 on:
   schedule:
-    - cron: "0 5 * * 1"   # Mondays 05:00 UTC
+    - cron: "0 23 * * 0"   # Sundays 23:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -20,10 +20,10 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name  "fee-monitor-bot"
           git config user.email "fee-monitor-bot@users.noreply.github.com"
-          git add data/fee_schedule_status.json data/fee_schedule_changes.json
+          git add data/fee_schedule_status.json data/fee_schedule_changes.json || true
           if git diff --staged --quiet; then
             echo "No status changes."
           else
@@ -46,8 +46,17 @@ jobs:
             git push
           fi
 
+      - name: Check for changes file
+        id: check-changes
+        run: |
+          if [ -f data/.fee_schedule_has_changes ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Open issue if changes or errors were detected
-        if: hashFiles('data/.fee_schedule_has_changes') != ''
+        if: steps.check-changes.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
