@@ -75,6 +75,7 @@ FEE_LINK_KEYWORDS = [
     "kostenordnung", "kostenverzeichnis",
     "gebuehrensatzung", "gebührensatzung",
     "gebuehrentarif", "gebührentarif",
+    "entgeltverzeichnis",
 ]
 # Broader keywords for pages worth a shallow follow if the fee link isn't
 # on the homepage (nav labels, not the fee schedule itself).
@@ -89,6 +90,8 @@ DATE_PATTERNS = [
     re.compile(r"Stand[:\s]*?(\d{1,2}\.\d{1,2}\.\d{2,4})"),
     re.compile(r"gültig\s+ab[:\s]*?(\d{1,2}\.\d{1,2}\.\d{2,4})", re.IGNORECASE),
     re.compile(r"g[üu]ltig\s+ab\s+dem[:\s]*?(\d{1,2}\.\d{1,2}\.\d{2,4})", re.IGNORECASE),
+    # Bare dates in link text like "Gebührenverzeichnis 16.06.2025"
+    re.compile(r"(\d{1,2}\.\d{1,2}\.\d{2,4})"),
 ]
 
 MONTHS_DE = {
@@ -106,7 +109,23 @@ DATE_MONTHNAME_RE = re.compile(
 # Per-chamber overrides, keyed by slug (see data/chambers_national.json).
 # Fill this in as you discover chambers the generic heuristics can't handle —
 # e.g. {"hwk-example": {"fee_schedule_url": "https://.../gebuehren.pdf"}}
-CHAMBER_OVERRIDES: dict[str, dict] = {}
+CHAMBER_OVERRIDES: dict[str, dict] = {
+    "hwk-erfurt": {
+        "fee_schedule_url": "https://www.hwk-erfurt.de/downloads/gebuehren-und-entgeltverzeichnis-16-06-2025-4,2529.pdf",
+    },
+    "hwk-koeln": {
+        "fee_schedule_url": "https://www.hwk-koeln.de/downloads/gebuehren-meisterpruefung-32,3199.pdf",
+    },
+    "hwk-muenster": {
+        "fee_schedule_url": "https://www.hwk-muenster.de/hwk-muenster/%C3%9Cber%20uns/Rechtsgrundlagen/Beitr%C3%A4ge%20und%20Geb%C3%BChren/Geb%C3%BChrentarif%20zuletzt%20ge%C3%A4ndert%20Dezember%202025.pdf",
+    },
+    "hwk-magdeburg": {
+        "fee_schedule_url": "https://www.hwk-magdeburg.de/downloads/gebuehren-und-entgeltordnung-der-handwerkskammer-magdeburg-2026-16,5916.pdf",
+    },
+    "hwk-konstanz": {
+        "fee_schedule_url": "https://hwk-konstanz.uniplus-software.de/wp-content/uploads/hwk-kn-gebuehrenverzeichnis_01012025.pdf",
+    },
+}
 
 
 @dataclass
