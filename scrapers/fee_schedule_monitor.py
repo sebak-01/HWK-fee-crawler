@@ -358,6 +358,8 @@ def _load_previous_status() -> dict[str, dict]:
     if not STATUS_JSON.exists():
         return {}
     data = json.loads(STATUS_JSON.read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        data = data.get("results", data.get("chambers", []))
     return {r["slug"]: r for r in data}
 
 
@@ -407,6 +409,8 @@ def main(argv: list[str] | None = None) -> int:
         results.append(r)
 
     ok = sum(1 for r in results if r.last_updated)
+    no_link = sum(1 for r in results if r.error and "Link nicht gefunden" in r.error)
+    no_date = sum(1 for r in results if r.error and "Datum konnte nicht" in r.error)
     logger.info("Done: %d/%d chambers resolved a date.", ok, len(results))
 
     if args.dry_run:
@@ -417,8 +421,18 @@ def main(argv: list[str] | None = None) -> int:
     changes = diff_results(previous, results)
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    summary = {
+        "run_at": datetime.now(timezone.utc).isoformat(timespec="seconds") + "Z",
+        "total_chambers": len(results),
+        "positive_findings": ok,
+        "missing": len(results) - ok,
+        "link_not_found": no_link,
+        "date_undetermined": no_date,
+    }
+
     STATUS_JSON.write_text(
-        json.dumps([asdict(r) for r in results], ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
+        json.dumps({"summary": summary, "results": [asdict(r) for r in results]}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
     )
 
     if not CHANGES_JSON.exists():
