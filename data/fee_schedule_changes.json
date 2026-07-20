@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "slug": "hwk-duesseldorf",
+    "name": "Handwerkskammer Düsseldorf",
+    "previous_date": "2026-01-26",
+    "new_date": "2026-07-16",
+    "previous_url": "https://www.hwk-duesseldorf.de/downloads/gebuehrentarif-2026-beschluss-vom-20-11-2025-31,4332.pdf",
+    "new_url": "https://www.hwk-duesseldorf.de/downloads/gebuehrentarif-beschluss-vom-20-11-2025-31,4332.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-erfurt",
+    "name": "Handwerkskammer Erfurt",
+    "previous_date": null,
+    "new_date": "2025-06-27",
+    "previous_url": null,
+    "new_url": "https://www.hwk-erfurt.de/downloads/gebuehren-und-entgeltverzeichnis-16-06-2025-4,2529.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-flensburg",
+    "name": "Handwerkskammer Flensburg",
+    "previous_date": "2026-03-18",
+    "new_date": "2026-07-16",
+    "previous_url": "https://www.hwk-flensburg.de/_Resources/Persistent/0/d/a/8/0da863017bdfc4188c7c32fbb9c3329f6a262eca/Geb%C3%BChrenordnung%202026_Stand%2017.02.2026.pdf",
+    "new_url": "https://www.hwk-flensburg.de/_Resources/Persistent/c/d/1/a/cd1a20d4b9e963006128f50c7aa915242c676635/Geb%C3%BChrenordnung%202026_Stand%2020260715.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-gera",
+    "name": "Handwerkskammer für Ostthüringen",
+    "previous_date": "2025-01-30",
+    "new_date": "2026-05-08",
+    "previous_url": "https://www.hwk-gera.de/downloads/gebuehrenordnung-der-handwerkskammer-fuer-ostthueringen-5,1367.pdf",
+    "new_url": "https://www.hwk-gera.de/downloads/anlage-zum-gebuehren-und-entgeltverzeichnis-uelu-gebuehren-grundstufe-5,1017.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODM4NTc1NDgsImV4cCI6MTc4Mzk0NzU0OCwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.ZnAAItLycJYBNsEl77skRq7yrlUcvU4F4bT4hDhDfCQ/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODQ0NzIwNTEsImV4cCI6MTc4NDU2MjA1MSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.h_G-baigiBAn7J2FqGbreqTf4ir-ymihK9LiXUZbar0/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-koeln",
+    "name": "Handwerkskammer zu Köln",
+    "previous_date": null,
+    "new_date": "2026-02-23",
+    "previous_url": null,
+    "new_url": "https://www.hwk-koeln.de/downloads/gebuehren-meisterpruefung-32,3199.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-konstanz",
+    "name": "Handwerkskammer Konstanz",
+    "previous_date": null,
+    "new_date": "2025-08-28",
+    "previous_url": null,
+    "new_url": "https://hwk-konstanz.uniplus-software.de/wp-content/uploads/hwk-kn-gebuehrenverzeichnis_01012025.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-magdeburg",
+    "name": "Handwerkskammer Magdeburg",
+    "previous_date": null,
+    "new_date": "2026-04-08",
+    "previous_url": null,
+    "new_url": "https://www.hwk-magdeburg.de/downloads/gebuehren-und-entgeltordnung-der-handwerkskammer-magdeburg-2026-16,5916.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-mannheim",
+    "name": "Handwerkskammer Mannheim - Rhein-Neckar-Odenwald",
+    "previous_date": "2025-12-11",
+    "new_date": "2075-12-10",
+    "previous_url": "https://www.hwk-mannheim.de/downloads/pdf-das-gebuehrenverzeichnis-65,451.pdf",
+    "new_url": "https://www.hwk-mannheim.de/downloads/pdf-die-gebuehrenordnung-barrierefrei-65,450.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-muenster",
+    "name": "Handwerkskammer Münster",
+    "previous_date": null,
+    "new_date": "2026-01-15",
+    "previous_url": null,
+    "new_url": "https://www.hwk-muenster.de/hwk-muenster/%C3%9Cber%20uns/Rechtsgrundlagen/Beitr%C3%A4ge%20und%20Geb%C3%BChren/Geb%C3%BChrentarif%20zuletzt%20ge%C3%A4ndert%20Dezember%202025.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-osnabrueck",
+    "name": "Handwerkskammer Osnabrück-Emsland-Grafschaft Bentheim",
+    "previous_date": "2026-01-01",
+    "new_date": "2043-07-02",
+    "previous_url": "https://www.hwk-osnabrueck.de/wp-content/uploads/2026-01-Gebuehrenordnung.pdf",
+    "new_url": "https://www.hwk-osnabrueck.de/rechtsgrundlagen/#section-3",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-trier",
+    "name": "Handwerkskammer Trier",
+    "previous_date": "2026-01-21",
+    "new_date": "2026-01-20",
+    "previous_url": "https://www.hwk-trier.de/downloads/gebuehrenverzeichnis-54,77.pdf",
+    "new_url": "https://www.hwk-trier.de/downloads/gebuehrenverzeichnis-54,77.pdf",
+    "detected_at": "2026-07-20T00:09:01+00:00Z"
+  }
+]
