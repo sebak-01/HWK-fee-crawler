@@ -106,5 +106,23 @@
     "previous_url": "https://www.hwk-trier.de/downloads/gebuehrenverzeichnis-54,77.pdf",
     "new_url": "https://www.hwk-trier.de/downloads/gebuehrenverzeichnis-54,77.pdf",
     "detected_at": "2026-07-20T00:09:01+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODQ0NzIwNTEsImV4cCI6MTc4NDU2MjA1MSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.h_G-baigiBAn7J2FqGbreqTf4ir-ymihK9LiXUZbar0/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODUwNzk5MjcsImV4cCI6MTc4NTE2OTkyNywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.fSkKTDntGxgtwY-k5GHKreJCyATUQxGtYY8ApO5dQYI/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-07-27T00:12:31+00:00Z"
+  },
+  {
+    "slug": "hwk-osnabrueck",
+    "name": "Handwerkskammer Osnabrück-Emsland-Grafschaft Bentheim",
+    "previous_date": "2043-07-02",
+    "new_date": "2026-01-01",
+    "previous_url": "https://www.hwk-osnabrueck.de/rechtsgrundlagen/#section-3",
+    "new_url": "https://www.hwk-osnabrueck.de/wp-content/uploads/2026-01-Gebuehrenordnung.pdf",
+    "detected_at": "2026-07-27T00:12:31+00:00Z"
   }
 ]
