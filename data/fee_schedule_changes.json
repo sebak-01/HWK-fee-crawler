@@ -124,5 +124,23 @@
     "previous_url": "https://www.hwk-osnabrueck.de/rechtsgrundlagen/#section-3",
     "new_url": "https://www.hwk-osnabrueck.de/wp-content/uploads/2026-01-Gebuehrenordnung.pdf",
     "detected_at": "2026-07-27T00:12:31+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODUwNzk5MjcsImV4cCI6MTc4NTE2OTkyNywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.fSkKTDntGxgtwY-k5GHKreJCyATUQxGtYY8ApO5dQYI/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODU3MTU0MTgsImV4cCI6MTc4NTgwNTQxOCwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.tWJXN8g8dwM8HJOru47CqU0_5yO50D670RcNkjBLYO4/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-08-03T00:10:15+00:00Z"
+  },
+  {
+    "slug": "hwk-omv",
+    "name": "Handwerkskammer Ostmecklenburg-Vorpommern",
+    "previous_date": "2026-02-16",
+    "new_date": "2026-07-28",
+    "previous_url": "https://www.hwk-omv.de/downloads/gebuehrenverzeichnis-18,419.pdf",
+    "new_url": "https://www.hwk-omv.de/downloads/gebuehrenverzeichnis-18,419.pdf",
+    "detected_at": "2026-08-03T00:10:15+00:00Z"
   }
 ]
