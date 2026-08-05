@@ -32,14 +32,17 @@ per-chamber scrapers), no shared code.
    contains the true revision date:
    - PDF metadata (`/ModDate` or `/CreationDate`)
    - PDF body text (first 3 pages scanned for "Stand: DD.MM.YYYY" patterns)
-   - Page text on HTML pages
+   - Page text on HTML pages ("Stand:", "Seite aktualisiert am DD. Monat YYYY")
    - HTTP `Last-Modified` response header
-3. **Check multiple candidate links.** If a page links to more than one
+3. **Extract fee amounts** from HTML pages (e.g., HWK Stuttgart's Meisterprüfung
+   page). Parses Teil I–IV amounts like "Teil I: 360,00 Euro" to track fee
+   changes even when no date or PDF is available.
+4. **Check multiple candidate links.** If a page links to more than one
    fee schedule PDF, the crawler resolves the date for each and keeps the
    URL with the newest effective date.
-4. **Diff against last week's run.** Any chamber whose resolved URL or date
-   changed gets logged to `data/fee_schedule_changes.json`.
-5. **Notify.** The weekly GitHub Action opens a GitHub Issue listing
+5. **Diff against last week's run.** Any chamber whose resolved URL, date,
+   or fee amounts changed gets logged to `data/fee_schedule_changes.json`.
+6. **Notify.** The weekly GitHub Action opens a GitHub Issue listing
    what changed AND which chambers failed to resolve (errors), so you get
    pinged via GitHub's own notifications (if you're watching the repo).
 
@@ -61,6 +64,27 @@ CHAMBER_OVERRIDES: dict[str, dict] = {
     "hwk-example": {"fee_schedule_url": "https://www.hwk-example.de/gebuehren.pdf"},
 }
 ```
+
+### Current overrides (16 chambers)
+
+| Slug | Source |
+|------|--------|
+| `hwk-erfurt` | Direct PDF link |
+| `hwk-koeln` | Direct PDF link |
+| `hwk-muenster` | Direct PDF link |
+| `hwk-magdeburg` | Direct PDF link |
+| `hwk-konstanz` | Direct PDF link |
+| `hwk-owl` | Direct PDF link |
+| `hwk-potsdam` | Direct PDF link |
+| `hwk-stuttgart` | HTML page (fee amount tracking) |
+| `hwk-ulm` | Direct PDF link |
+| `hwk-mittelfranken` | Direct PDF link |
+| `hwk-ufr` | Direct PDF link |
+| `hwk-schwaben` | Direct PDF link |
+| `hwk-bls` | Direct PDF link |
+| `hwk-halle` | Direct PDF link |
+| `hwk-heilbronn` | Direct PDF link |
+| `hwk-leipzig` | Direct PDF link |
 
 Chamber slugs and websites live in `data/chambers_national.json`.
 
@@ -97,9 +121,10 @@ python -m scrapers.fee_schedule_monitor --delay 2.0
   name, website), sourced from the [ZDH address list](https://www.zdh.de/ueber-uns/organisationen-des-handwerks/handwerkskammern/adressen-der-handwerkskammern/).
 - **`data/fee_schedule_status.json`** — current state per chamber: resolved
   URL, resolved date, detection method (`pdf_metadata` / `pdf_text` /
-  `page_text` / `http_header`), timestamp, and any error.
+  `page_text` / `http_header`), `fee_amounts` (dict of Teil I–IV amounts
+  for HTML pages), timestamp, and any error.
 - **`data/fee_schedule_changes.json`** — append-only log of every detected
-  change (previous date/URL → new date/URL, with a timestamp).
+  change (previous date/URL/fees → new date/URL/fees, with a timestamp).
 - **`data/.fee_schedule_has_changes`** — marker file the Action checks to
   decide whether to open an issue. Contains sections for both changed
   chambers and chambers with errors; present when the latest run found
@@ -129,8 +154,8 @@ the marker file already has the human-readable summary.
 
 ## Roadmap / known gaps
 
-- [ ] Spot-check all 53 chambers' resolved URLs after the first live run;
-      fill in `CHAMBER_OVERRIDES` for the ones the generic heuristic misses.
+- [ ] Fill in `CHAMBER_OVERRIDES` for remaining chambers the generic heuristic
+      misses (16 of 53 done; `hwk-niederbayern-oberpfalz` still pending).
 - [ ] Some chambers may gate their Gebührenverzeichnis behind a search form
       or JS-rendered page (same class of problem as HWK Kassel's BBZ Mitte
       in MeisterKompass) — those will need a raw-HTML or network-capture
