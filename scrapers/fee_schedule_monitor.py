@@ -100,9 +100,14 @@ MONTHS_DE = {
     "november": 11, "dezember": 12,
 }
 DATE_MONTHNAME_RE = re.compile(
-    r"Stand[:\s]*?(\d{1,2})\.?\s*("
+    r"(?:Stand|Seite\s+aktualisiert\s+am)[:\s]*?(\d{1,2})\.?\s*("
     r"januar|februar|märz|maerz|april|mai|juni|juli|august|september|oktober|november|dezember"
     r")\s*(\d{4})",
+    re.IGNORECASE,
+)
+# Fee amounts pattern: "Teil I: 360,00 Euro" or "360,00 €"
+FEE_AMOUNT_RE = re.compile(
+    r"Teil\s+(I{1,3}|IV|V):?\s*(\d{1,3}(?:[.,]\d{2})?)\s*(?:Euro|€)",
     re.IGNORECASE,
 )
 
@@ -125,6 +130,39 @@ CHAMBER_OVERRIDES: dict[str, dict] = {
     "hwk-konstanz": {
         "fee_schedule_url": "https://hwk-konstanz.uniplus-software.de/wp-content/uploads/hwk-kn-gebuehrenverzeichnis_01012025.pdf",
     },
+    "hwk-owl": {
+        "fee_schedule_url": "https://www.handwerk-owl.de/downloads/gebuehrentarif-2026-35,715.pdf",
+    },
+    "hwk-potsdam": {
+        "fee_schedule_url": "https://www.hwk-potsdam.de/downloads/anlage-gebuehrenordnung-gueltig-ab-13-september-2025-9,14516.pdf",
+    },
+    "hwk-stuttgart": {
+        "fee_schedule_url": "https://www.hwk-stuttgart.de/artikel/meisterpruefung-alles-wichtige-auf-einen-blick-67,230,525.html",
+    },
+    "hwk-ulm": {
+        "fee_schedule_url": "https://www.hwk-ulm.de/wp-content/uploads/Gebuehrenverzeichnis-Stand-10.12.2025-1.pdf",
+    },
+    "hwk-mittelfranken": {
+        "fee_schedule_url": "https://www.hwk-mittelfranken.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-mittelfranken-ab-1-januar-2026-75,3786.pdf",
+    },
+    "hwk-ufr": {
+        "fee_schedule_url": "https://www.hwk-ufr.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-unterfranken-78,4003.pdf",
+    },
+    "hwk-schwaben": {
+        "fee_schedule_url": "https://www.hwk-schwaben.de/downloads/gebuehrenordnung-mit-gebuehrenverzeichnis-2026-71,6166.pdf",
+    },
+    "hwk-bls": {
+        "fee_schedule_url": "https://www.hwk-bls.de/downloads/gebuehrenuebersicht-meisterpruefungen-der-handwerkskammer-braunschweig-lueneburg-stade-pdf-22,2045.pdf",
+    },
+    "hwk-halle": {
+        "fee_schedule_url": "https://www.hwkhalle.de/wp-content/uploads/Gebuehrenverzeichnis-1.pdf",
+    },
+    "hwk-heilbronn": {
+        "fee_schedule_url": "https://www.hwk-heilbronn.de/wp-content/uploads/260127_Gebuehrenverzeichnis.pdf",
+    },
+    "hwk-leipzig": {
+        "fee_schedule_url": "https://www.hwk-leipzig.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-zu-leipzig-stand-dezember-2025-3,3307.pdf",
+    },
 }
 
 
@@ -136,6 +174,7 @@ class ChamberResult:
     fee_schedule_url: str | None = None
     last_updated: str | None = None          # ISO date, if determined
     detection_method: str | None = None      # "pdf_metadata" | "page_text" | "http_header" | None
+    fee_amounts: dict[str, str] | None = None  # {"teil_i": "360.00", ...} for HTML pages
     checked_at: str = ""
     error: str | None = None
 
@@ -331,6 +370,17 @@ class Crawler:
         except ValueError:
             return None
 
+    def _extract_fee_amounts(self, text: str) -> dict[str, str] | None:
+        """Extract Teil I-IV fee amounts from HTML text."""
+        amounts: dict[str, str] = {}
+        Teil_LABELS = {"I": "teil_i", "II": "teil_ii", "III": "teil_iii", "IV": "teil_iv"}
+        for m in FEE_AMOUNT_RE.finditer(text):
+            label, amount = m.groups()
+            key = Teil_LABELS.get(label.upper())
+            if key:
+                amounts[key] = amount.replace(",", ".")
+        return amounts if amounts else None
+
     # ------------------------------------------------------------------
 
     def check_chamber(self, chamber: dict) -> ChamberResult:
@@ -351,6 +401,7 @@ class Crawler:
             best_date: str | None = None
             best_url: str | None = None
             best_method: str | None = None
+            best_fee_amounts: dict[str, str] | None = None
             for url in candidate_urls[:MAX_CANDIDATE_LINKS]:
                 date_val, method = self.resolve_last_updated(url)
                 if date_val and (best_date is None or date_val > best_date):
@@ -358,10 +409,19 @@ class Crawler:
                     best_url = url
                     best_method = method
 
+                # Extract fee amounts from HTML pages (not PDFs)
+                if not url.lower().endswith(".pdf"):
+                    resp = self.get(url)
+                    if resp:
+                        fee_amounts = self._extract_fee_amounts(resp.text)
+                        if fee_amounts:
+                            best_fee_amounts = fee_amounts
+
             result.fee_schedule_url = best_url or candidate_urls[0]
             result.last_updated = best_date
             result.detection_method = best_method
-            if not best_date:
+            result.fee_amounts = best_fee_amounts
+            if not best_date and not best_fee_amounts:
                 result.error = "Datum konnte nicht bestimmt werden"
         except Exception as exc:  # noqa: BLE001 — keep the run going for other chambers
             logger.exception("Unhandled error checking %s", slug)
@@ -388,8 +448,11 @@ def diff_results(previous: dict[str, dict], current: list[ChamberResult]) -> lis
         prev = previous.get(r.slug)
         if prev is None:
             continue  # first time we've seen this chamber — not a "change"
-        if prev.get("last_updated") != r.last_updated or prev.get("fee_schedule_url") != r.fee_schedule_url:
-            changes.append({
+        url_changed = prev.get("fee_schedule_url") != r.fee_schedule_url
+        date_changed = prev.get("last_updated") != r.last_updated
+        fees_changed = prev.get("fee_amounts") != r.fee_amounts
+        if url_changed or date_changed or fees_changed:
+            change_info = {
                 "slug": r.slug,
                 "name": r.name,
                 "previous_date": prev.get("last_updated"),
@@ -397,7 +460,11 @@ def diff_results(previous: dict[str, dict], current: list[ChamberResult]) -> lis
                 "previous_url": prev.get("fee_schedule_url"),
                 "new_url": r.fee_schedule_url,
                 "detected_at": datetime.now(timezone.utc).isoformat(timespec="seconds") + "Z",
-            })
+            }
+            if fees_changed:
+                change_info["previous_fee_amounts"] = prev.get("fee_amounts")
+                change_info["new_fee_amounts"] = r.fee_amounts
+            changes.append(change_info)
     return changes
 
 
