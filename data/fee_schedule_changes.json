@@ -142,5 +142,120 @@
     "previous_url": "https://www.hwk-omv.de/downloads/gebuehrenverzeichnis-18,419.pdf",
     "new_url": "https://www.hwk-omv.de/downloads/gebuehrenverzeichnis-18,419.pdf",
     "detected_at": "2026-08-03T00:10:15+00:00Z"
+  },
+  {
+    "slug": "hwk-schwaben",
+    "name": "Handwerkskammer für Schwaben",
+    "previous_date": null,
+    "new_date": "2025-12-18",
+    "previous_url": "https://www.hwk-schwaben.de/artikel/gebuehrenordnung-mit-gebuehrenverzeichnis-71,0,281.html",
+    "new_url": "https://www.hwk-schwaben.de/downloads/gebuehrenordnung-mit-gebuehrenverzeichnis-2026-71,6166.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-owl",
+    "name": "Handwerkskammer Ostwestfalen-Lippe zu Bielefeld",
+    "previous_date": null,
+    "new_date": "2025-12-19",
+    "previous_url": null,
+    "new_url": "https://www.handwerk-owl.de/downloads/gebuehrentarif-2026-35,715.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-bls",
+    "name": "Handwerkskammer Braunschweig-Lüneburg-Stade",
+    "previous_date": null,
+    "new_date": "2026-03-18",
+    "previous_url": "https://www.hwk-bls.de/artikel/kostenordnung-mit-kostentarifen-22,482,869.html",
+    "new_url": "https://www.hwk-bls.de/downloads/gebuehrenuebersicht-meisterpruefungen-der-handwerkskammer-braunschweig-lueneburg-stade-pdf-22,2045.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-halle",
+    "name": "Handwerkskammer Halle (Saale)",
+    "previous_date": null,
+    "new_date": "2026-03-27",
+    "previous_url": "https://www.hwkhalle.de/aktuelles-gebuehrenverzeichnis/",
+    "new_url": "https://www.hwkhalle.de/wp-content/uploads/Gebuehrenverzeichnis-1.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-heilbronn",
+    "name": "Handwerkskammer Heilbronn-Franken",
+    "previous_date": null,
+    "new_date": "2026-02-05",
+    "previous_url": "https://www.hwk-heilbronn.de/gebuehren/",
+    "new_url": "https://www.hwk-heilbronn.de/wp-content/uploads/260127_Gebuehrenverzeichnis.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODU3MTU0MTgsImV4cCI6MTc4NTgwNTQxOCwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.tWJXN8g8dwM8HJOru47CqU0_5yO50D670RcNkjBLYO4/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODYyNzEzMDUsImV4cCI6MTc4NjM2MTMwNSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.tFzUMYYeZLrxTB8rIyhew_77gm2w8Fh9232H9uJ4rvw/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-leipzig",
+    "name": "Handwerkskammer zu Leipzig",
+    "previous_date": null,
+    "new_date": "2026-02-05",
+    "previous_url": "https://www.hwk-leipzig.de/artikel/gebuehrenordnung-die-rechtliche-basis-fuer-die-erhebung-von-gebuehren-3,0,99.html",
+    "new_url": "https://www.hwk-leipzig.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-zu-leipzig-stand-dezember-2025-3,3307.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-rheinhessen",
+    "name": "Handwerkskammer Rheinhessen",
+    "previous_date": "2026-01-16",
+    "new_date": "2026-08-07",
+    "previous_url": "https://www.hwk.de/wp-content/uploads/2026_1201_Gebuehrenverzeichnis-1.pdf",
+    "new_url": "https://www.hwk.de/wp-content/uploads/20260808_Gebuehrenverzeichnis-der-Handwerkskammer-Rheinhessen.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-mittelfranken",
+    "name": "Handwerkskammer für Mittelfranken",
+    "previous_date": null,
+    "new_date": null,
+    "previous_url": null,
+    "new_url": "https://www.hwk-mittelfranken.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-mittelfranken-ab-1-januar-2026-75,3786.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-potsdam",
+    "name": "Handwerkskammer Potsdam",
+    "previous_date": null,
+    "new_date": "2025-09-23",
+    "previous_url": null,
+    "new_url": "https://www.hwk-potsdam.de/downloads/anlage-gebuehrenordnung-gueltig-ab-13-september-2025-9,14516.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
+  },
+  {
+    "slug": "hwk-stuttgart",
+    "name": "Handwerkskammer Region Stuttgart",
+    "previous_date": null,
+    "new_date": null,
+    "previous_url": null,
+    "new_url": "https://www.hwk-stuttgart.de/artikel/meisterpruefung-alles-wichtige-auf-einen-blick-67,230,525.html",
+    "detected_at": "2026-08-09T23:40:36+00:00Z",
+    "previous_fee_amounts": null,
+    "new_fee_amounts": {
+      "teil_i": "360.00",
+      "teil_ii": "330.00",
+      "teil_iii": "180.00",
+      "teil_iv": "180.00"
+    }
+  },
+  {
+    "slug": "hwk-ufr",
+    "name": "Handwerkskammer für Unterfranken",
+    "previous_date": null,
+    "new_date": "2026-06-26",
+    "previous_url": null,
+    "new_url": "https://www.hwk-ufr.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-unterfranken-78,4003.pdf",
+    "detected_at": "2026-08-09T23:40:36+00:00Z"
   }
 ]
