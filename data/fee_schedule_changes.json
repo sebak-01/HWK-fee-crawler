@@ -293,5 +293,32 @@
     "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODc1MDgwNzEsImV4cCI6MTc4NzU5ODA3MSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.TR6fYWRzddMkNrvL4NrjYRcrSlzux1c5QKo9NG_HgAM/Gebuehrenverzeichnis_2025.pdf",
     "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODgxMDc4NTMsImV4cCI6MTc4ODE5Nzg1MywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.6iIQSAjCakn-7SYTGbbYKCVOuHVQDSVSCvoTz2xt_GU/Gebuehrenverzeichnis_2025.pdf",
     "detected_at": "2026-08-31T01:16:04+00:00Z"
+  },
+  {
+    "slug": "hwk-oberfranken",
+    "name": "Handwerkskammer für Oberfranken",
+    "previous_date": "2026-02-24",
+    "new_date": "2026-08-26",
+    "previous_url": "https://www.hwk-oberfranken.de/downloads/gebuehrenordnung-und-gebuehrenverzeichnis-72,1016.pdf",
+    "new_url": "https://www.hwk-oberfranken.de/downloads/gebuehrenordnung-und-gebuehrenverzeichnis-72,1016.pdf",
+    "detected_at": "2026-09-07T00:51:51+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODgxMDc4NTMsImV4cCI6MTc4ODE5Nzg1MywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.6iIQSAjCakn-7SYTGbbYKCVOuHVQDSVSCvoTz2xt_GU/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODg3MTgxNDEsImV4cCI6MTc4ODgwODE0MSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.LM7WgMLBHd2fkt7jflex1ZsA8DuD0wsQriK9upw0Ki4/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-09-07T00:51:51+00:00Z"
+  },
+  {
+    "slug": "hwk-reutlingen",
+    "name": "Handwerkskammer Reutlingen",
+    "previous_date": "2026-03-25",
+    "new_date": "2026-08-31",
+    "previous_url": "https://www.hwk-reutlingen.de/wp-content/uploads/gebuehrenordnung_januar-2026.pdf",
+    "new_url": "https://www.hwk-reutlingen.de/wp-content/uploads/gebuehrenordnung_september2026.pdf",
+    "detected_at": "2026-09-07T00:51:51+00:00Z"
   }
 ]
