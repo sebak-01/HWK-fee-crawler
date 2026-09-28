@@ -1,6 +1,6 @@
 {
   "summary": {
-    "run_at": "2026-09-21T01:01:16+00:00Z",
+    "run_at": "2026-09-28T01:36:03+00:00Z",
     "total_chambers": 53,
     "positive_findings": 50,
     "missing": 3,
@@ -16,7 +16,7 @@
       "last_updated": "2026-01-15",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:49:34+00:00Z",
+      "checked_at": "2026-09-28T01:24:10+00:00Z",
       "error": null
     },
     {
@@ -27,7 +27,7 @@
       "last_updated": "2026-07-06",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:49:55+00:00Z",
+      "checked_at": "2026-09-28T01:24:32+00:00Z",
       "error": null
     },
     {
@@ -38,7 +38,7 @@
       "last_updated": "2025-12-18",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:50:10+00:00Z",
+      "checked_at": "2026-09-28T01:24:46+00:00Z",
       "error": null
     },
     {
@@ -49,7 +49,7 @@
       "last_updated": "2025-12-22",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:50:13+00:00Z",
+      "checked_at": "2026-09-28T01:24:49+00:00Z",
       "error": null
     },
     {
@@ -60,7 +60,7 @@
       "last_updated": "2026-08-26",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:50:33+00:00Z",
+      "checked_at": "2026-09-28T01:25:10+00:00Z",
       "error": null
     },
     {
@@ -71,7 +71,7 @@
       "last_updated": "2026-03-16",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:50:52+00:00Z",
+      "checked_at": "2026-09-28T01:25:33+00:00Z",
       "error": null
     },
     {
@@ -82,7 +82,7 @@
       "last_updated": "2025-12-19",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:51:12+00:00Z",
+      "checked_at": "2026-09-28T01:25:53+00:00Z",
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "last_updated": "2026-03-18",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:51:15+00:00Z",
+      "checked_at": "2026-09-28T01:25:56+00:00Z",
       "error": null
     },
     {
@@ -104,7 +104,7 @@
       "last_updated": "2026-01-26",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:51:18+00:00Z",
+      "checked_at": "2026-09-28T01:25:59+00:00Z",
       "error": null
     },
     {
@@ -115,7 +115,7 @@
       "last_updated": "2026-07-06",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:51:29+00:00Z",
+      "checked_at": "2026-09-28T01:26:10+00:00Z",
       "error": null
     },
     {
@@ -126,7 +126,7 @@
       "last_updated": "2025-09-22",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:51:55+00:00Z",
+      "checked_at": "2026-09-28T01:26:39+00:00Z",
       "error": null
     },
     {
@@ -137,7 +137,7 @@
       "last_updated": "2026-01-16",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:52:10+00:00Z",
+      "checked_at": "2026-09-28T01:26:55+00:00Z",
       "error": null
     },
     {
@@ -148,7 +148,7 @@
       "last_updated": "2025-07-31",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:52:24+00:00Z",
+      "checked_at": "2026-09-28T01:27:07+00:00Z",
       "error": null
     },
     {
@@ -159,7 +159,7 @@
       "last_updated": "2026-07-16",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:52:34+00:00Z",
+      "checked_at": "2026-09-28T01:27:18+00:00Z",
       "error": null
     },
     {
@@ -170,7 +170,7 @@
       "last_updated": "2025-06-27",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:52:49+00:00Z",
+      "checked_at": "2026-09-28T01:27:33+00:00Z",
       "error": null
     },
     {
@@ -181,7 +181,7 @@
       "last_updated": "2026-07-16",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:52:54+00:00Z",
+      "checked_at": "2026-09-28T01:27:37+00:00Z",
       "error": null
     },
     {
@@ -192,7 +192,7 @@
       "last_updated": "2025-11-24",
       "detection_method": "pdf_text",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:53:07+00:00Z",
+      "checked_at": "2026-09-28T01:27:51+00:00Z",
       "error": null
     },
     {
@@ -203,7 +203,7 @@
       "last_updated": "2026-01-31",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:53:28+00:00Z",
+      "checked_at": "2026-09-28T01:28:13+00:00Z",
       "error": null
     },
     {
@@ -214,7 +214,7 @@
       "last_updated": "2026-04-29",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:54:02+00:00Z",
+      "checked_at": "2026-09-28T01:28:47+00:00Z",
       "error": null
     },
     {
@@ -225,7 +225,7 @@
       "last_updated": "2026-05-08",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:54:20+00:00Z",
+      "checked_at": "2026-09-28T01:29:06+00:00Z",
       "error": null
     },
     {
@@ -236,7 +236,7 @@
       "last_updated": "2026-03-27",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:54:38+00:00Z",
+      "checked_at": "2026-09-28T01:29:24+00:00Z",
       "error": null
     },
     {
@@ -247,7 +247,7 @@
       "last_updated": "2026-01-02",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:54:41+00:00Z",
+      "checked_at": "2026-09-28T01:29:28+00:00Z",
       "error": null
     },
     {
@@ -258,7 +258,7 @@
       "last_updated": "2025-08-22",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:54:53+00:00Z",
+      "checked_at": "2026-09-28T01:29:40+00:00Z",
       "error": null
     },
     {
@@ -269,7 +269,7 @@
       "last_updated": "2026-02-05",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:55:03+00:00Z",
+      "checked_at": "2026-09-28T01:29:51+00:00Z",
       "error": null
     },
     {
@@ -280,7 +280,7 @@
       "last_updated": "2025-11-20",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:55:06+00:00Z",
+      "checked_at": "2026-09-28T01:29:54+00:00Z",
       "error": null
     },
     {
@@ -291,7 +291,7 @@
       "last_updated": "2026-04-02",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:55:16+00:00Z",
+      "checked_at": "2026-09-28T01:30:05+00:00Z",
       "error": null
     },
     {
@@ -302,18 +302,18 @@
       "last_updated": "2025-12-16",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:55:28+00:00Z",
+      "checked_at": "2026-09-28T01:30:17+00:00Z",
       "error": null
     },
     {
       "slug": "hwk-kassel",
       "name": "Handwerkskammer Kassel",
       "website": "https://www.hwk-kassel.de",
-      "fee_schedule_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODk5MTE5NTMsImV4cCI6MTc5MDAwMTk1MywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.lbAVYpBBx530FPkzNQXxvasmRT-qxd2meVjlffdA-ig/Gebuehrenverzeichnis_2025.pdf",
+      "fee_schedule_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTA1MDU0MzcsImV4cCI6MTc5MDU5NTQzNywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.vIa7YadAIpZ6aNNL7xdy9cAb85PIOzAQRsqQVqAP2bQ/Gebuehrenverzeichnis_2025.pdf",
       "last_updated": "2025-11-10",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:55:43+00:00Z",
+      "checked_at": "2026-09-28T01:30:32+00:00Z",
       "error": null
     },
     {
@@ -324,7 +324,7 @@
       "last_updated": "2026-01-13",
       "detection_method": "pdf_text",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:55:55+00:00Z",
+      "checked_at": "2026-09-28T01:30:44+00:00Z",
       "error": null
     },
     {
@@ -335,7 +335,7 @@
       "last_updated": "2026-02-23",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:08+00:00Z",
+      "checked_at": "2026-09-28T01:30:56+00:00Z",
       "error": null
     },
     {
@@ -346,7 +346,7 @@
       "last_updated": "2025-08-28",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:10+00:00Z",
+      "checked_at": "2026-09-28T01:30:59+00:00Z",
       "error": null
     },
     {
@@ -357,7 +357,7 @@
       "last_updated": "2026-02-05",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:14+00:00Z",
+      "checked_at": "2026-09-28T01:31:03+00:00Z",
       "error": null
     },
     {
@@ -368,7 +368,7 @@
       "last_updated": "2025-09-09",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:17+00:00Z",
+      "checked_at": "2026-09-28T01:31:07+00:00Z",
       "error": null
     },
     {
@@ -379,7 +379,7 @@
       "last_updated": "2026-08-12",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:29+00:00Z",
+      "checked_at": "2026-09-28T01:31:19+00:00Z",
       "error": null
     },
     {
@@ -390,7 +390,7 @@
       "last_updated": "2026-08-07",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:32+00:00Z",
+      "checked_at": "2026-09-28T01:31:22+00:00Z",
       "error": null
     },
     {
@@ -401,7 +401,7 @@
       "last_updated": "2075-12-10",
       "detection_method": "pdf_text",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:56:54+00:00Z",
+      "checked_at": "2026-09-28T01:31:42+00:00Z",
       "error": null
     },
     {
@@ -412,7 +412,7 @@
       "last_updated": "2025-01-07",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:57:10+00:00Z",
+      "checked_at": "2026-09-28T01:31:58+00:00Z",
       "error": null
     },
     {
@@ -423,7 +423,7 @@
       "last_updated": "2026-01-15",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:57:28+00:00Z",
+      "checked_at": "2026-09-28T01:32:16+00:00Z",
       "error": null
     },
     {
@@ -434,7 +434,7 @@
       "last_updated": null,
       "detection_method": null,
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:57:31+00:00Z",
+      "checked_at": "2026-09-28T01:32:19+00:00Z",
       "error": "Datum konnte nicht bestimmt werden"
     },
     {
@@ -445,7 +445,7 @@
       "last_updated": "2022-05-31",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:57:33+00:00Z",
+      "checked_at": "2026-09-28T01:32:21+00:00Z",
       "error": null
     },
     {
@@ -456,7 +456,7 @@
       "last_updated": "2026-01-01",
       "detection_method": "pdf_text",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:57:48+00:00Z",
+      "checked_at": "2026-09-28T01:32:37+00:00Z",
       "error": null
     },
     {
@@ -467,7 +467,7 @@
       "last_updated": null,
       "detection_method": null,
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:58:13+00:00Z",
+      "checked_at": "2026-09-28T01:32:59+00:00Z",
       "error": "Gebührenverzeichnis-Link nicht gefunden"
     },
     {
@@ -478,7 +478,7 @@
       "last_updated": "2025-09-23",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:58:40+00:00Z",
+      "checked_at": "2026-09-28T01:33:26+00:00Z",
       "error": null
     },
     {
@@ -489,7 +489,7 @@
       "last_updated": "2026-08-31",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:58:43+00:00Z",
+      "checked_at": "2026-09-28T01:33:29+00:00Z",
       "error": null
     },
     {
@@ -500,7 +500,7 @@
       "last_updated": "2026-07-28",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:59:02+00:00Z",
+      "checked_at": "2026-09-28T01:33:49+00:00Z",
       "error": null
     },
     {
@@ -511,7 +511,7 @@
       "last_updated": "2026-06-01",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:59:16+00:00Z",
+      "checked_at": "2026-09-28T01:34:04+00:00Z",
       "error": null
     },
     {
@@ -522,7 +522,7 @@
       "last_updated": "2025-10-17",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:59:33+00:00Z",
+      "checked_at": "2026-09-28T01:34:20+00:00Z",
       "error": null
     },
     {
@@ -538,7 +538,7 @@
         "teil_iii": "180.00",
         "teil_iv": "180.00"
       },
-      "checked_at": "2026-09-21T00:59:52+00:00Z",
+      "checked_at": "2026-09-28T01:34:40+00:00Z",
       "error": null
     },
     {
@@ -549,7 +549,7 @@
       "last_updated": "2025-10-14",
       "detection_method": "http_header",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T00:59:57+00:00Z",
+      "checked_at": "2026-09-28T01:34:44+00:00Z",
       "error": null
     },
     {
@@ -560,7 +560,7 @@
       "last_updated": "2026-01-20",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T01:00:34+00:00Z",
+      "checked_at": "2026-09-28T01:35:20+00:00Z",
       "error": null
     },
     {
@@ -571,7 +571,7 @@
       "last_updated": "2025-12-10",
       "detection_method": "pdf_text",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T01:00:55+00:00Z",
+      "checked_at": "2026-09-28T01:35:42+00:00Z",
       "error": null
     },
     {
@@ -582,7 +582,7 @@
       "last_updated": "2026-09-18",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T01:00:58+00:00Z",
+      "checked_at": "2026-09-28T01:35:45+00:00Z",
       "error": null
     },
     {
@@ -593,7 +593,7 @@
       "last_updated": "2026-06-26",
       "detection_method": "pdf_metadata",
       "fee_amounts": null,
-      "checked_at": "2026-09-21T01:01:13+00:00Z",
+      "checked_at": "2026-09-28T01:36:00+00:00Z",
       "error": null
     }
   ]
