@@ -374,5 +374,32 @@
     "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTExMzU4NjAsImV4cCI6MTc5MTIyNTg1OSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.oqjfIZmWJjzOJyvV2xnCaMopxBbpZY_ZbAHtRkj4CbA/Gebuehrenverzeichnis_2025.pdf",
     "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTE3Mjk1ODUsImV4cCI6MTc5MTgxOTU4NSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.9HM5j2l3qdRXRn2YSl_b5W7I3IUnYMsf0M_zt_X9DwA/Gebuehrenverzeichnis_2025.pdf",
     "detected_at": "2026-10-12T02:14:54+00:00Z"
+  },
+  {
+    "slug": "hwk-hannover",
+    "name": "Handwerkskammer Hannover",
+    "previous_date": "2025-08-22",
+    "new_date": "2026-10-13",
+    "previous_url": "https://www.hwk-hannover.de/downloads/gebuehrenordnung-der-handwerkskammer-hannover-vom-21-08-2025-23,4436.pdf",
+    "new_url": "https://www.hwk-hannover.de/downloads/gebuehrenordnung-der-handwerkskammer-hannover-vom-20-07-2026-23,4436.pdf",
+    "detected_at": "2026-10-19T00:59:35+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTE3Mjk1ODUsImV4cCI6MTc5MTgxOTU4NSwidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.9HM5j2l3qdRXRn2YSl_b5W7I3IUnYMsf0M_zt_X9DwA/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTIzMTcwNTcsImV4cCI6MTc5MjQwNzA1NywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.b0uTEz-QCs0RTZoKfed5XIzHMpT-_LuWF3lTXwPvrnQ/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-10-19T00:59:35+00:00Z"
+  },
+  {
+    "slug": "hwk-ufr",
+    "name": "Handwerkskammer für Unterfranken",
+    "previous_date": "2026-06-26",
+    "new_date": null,
+    "previous_url": "https://www.hwk-ufr.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-unterfranken-78,4003.pdf",
+    "new_url": "https://www.hwk-ufr.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-unterfranken-78,4003.pdf",
+    "detected_at": "2026-10-19T00:59:35+00:00Z"
   }
 ]
