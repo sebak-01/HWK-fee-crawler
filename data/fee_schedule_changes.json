@@ -401,5 +401,32 @@
     "previous_url": "https://www.hwk-ufr.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-unterfranken-78,4003.pdf",
     "new_url": "https://www.hwk-ufr.de/downloads/gebuehrenverzeichnis-der-handwerkskammer-fuer-unterfranken-78,4003.pdf",
     "detected_at": "2026-10-19T00:59:35+00:00Z"
+  },
+  {
+    "slug": "hwk-hannover",
+    "name": "Handwerkskammer Hannover",
+    "previous_date": "2026-10-13",
+    "new_date": null,
+    "previous_url": "https://www.hwk-hannover.de/downloads/gebuehrenordnung-der-handwerkskammer-hannover-vom-20-07-2026-23,4436.pdf",
+    "new_url": "https://www.hwk-hannover.de/artikel/neue-gebuehrenordnung-fuer-die-eintragung-in-die-lehrlingsrolle-23,0,7962.html",
+    "detected_at": "2026-10-26T01:09:47+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTIzMTcwNTcsImV4cCI6MTc5MjQwNzA1NywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.b0uTEz-QCs0RTZoKfed5XIzHMpT-_LuWF3lTXwPvrnQ/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTI5MTcxOTcsImV4cCI6MTc5MzAwNzE5NywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.MpFqo4oqHIvssIno6fC_jNYeifKZJjqEahLf6cJrmUM/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-10-26T01:09:47+00:00Z"
+  },
+  {
+    "slug": "hwk-muenchen",
+    "name": "Handwerkskammer für München und Oberbayern",
+    "previous_date": "2025-01-07",
+    "new_date": "2026-10-23",
+    "previous_url": "https://www.hwk-muenchen.de/downloads/ausfertigung-gebuehrenordnung-mit-gebuehrenverzeichnis-der-hwk-fuer-muenchen-und-oberbayern-01-2025-74,13891.pdf",
+    "new_url": "https://www.hwk-muenchen.de/downloads/gebuehrenordnung-mit-gebuehrenverzeichnis-der-hwk-74,14133.pdf",
+    "detected_at": "2026-10-26T01:09:47+00:00Z"
   }
 ]
