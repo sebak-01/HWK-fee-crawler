@@ -428,5 +428,23 @@
     "previous_url": "https://www.hwk-muenchen.de/downloads/ausfertigung-gebuehrenordnung-mit-gebuehrenverzeichnis-der-hwk-fuer-muenchen-und-oberbayern-01-2025-74,13891.pdf",
     "new_url": "https://www.hwk-muenchen.de/downloads/gebuehrenordnung-mit-gebuehrenverzeichnis-der-hwk-74,14133.pdf",
     "detected_at": "2026-10-26T01:09:47+00:00Z"
+  },
+  {
+    "slug": "hwk-halle",
+    "name": "Handwerkskammer Halle (Saale)",
+    "previous_date": "2026-03-27",
+    "new_date": null,
+    "previous_url": "https://www.hwkhalle.de/wp-content/uploads/Gebuehrenverzeichnis-1.pdf",
+    "new_url": "https://www.hwkhalle.de/wp-content/uploads/Gebuehrenverzeichnis-1.pdf",
+    "detected_at": "2026-11-02T02:17:28+00:00Z"
+  },
+  {
+    "slug": "hwk-kassel",
+    "name": "Handwerkskammer Kassel",
+    "previous_date": "2025-11-10",
+    "new_date": "2025-11-10",
+    "previous_url": "https://www.hwk-kassel.de/securedl/sdl-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTI5MTcxOTcsImV4cCI6MTc5MzAwNzE5NywidXNlciI6MCwiZ3JvdXBzIjpbMCwtMV0sImZpbGUiOiJmaWxlYWRtaW4vZG93bmxvYWRzLzYuX1VlYmVyX3Vucy82LjVfQmVpdHJhZWdlX0dlYnVlaHJlbi9HZWJ1ZWhyZW52ZXJ6ZWljaG5pc18yMDI1LnBkZiIsInBhZ2UiOjU3fQ.MpFqo4oqHIvssIno6fC_jNYeifKZJjqEahLf6cJrmUM/Gebuehrenverzeichnis_2025.pdf",
+    "new_url": "https://www.hwk-kassel.de/fileadmin/downloads/6._Ueber_uns/6.5_Beitraege_Gebuehren/Gebuehrenverzeichnis_2025.pdf",
+    "detected_at": "2026-11-02T02:17:28+00:00Z"
   }
 ]
